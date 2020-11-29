@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    
+    <EDMTDev.ZXingXamarinAndroid.ZXingScannerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/zxscan"
+         android:layout_above="@id/layout_result"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_result"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_result"
+            android:text="@string/three_dots"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:gravity="center"
+            />
+        <Button
+            android:text="@string/open_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/link_button" />
+        <Button
+            android:text="@string/break_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/break_button" />
+    </LinearLayout>
+</RelativeLayout>
